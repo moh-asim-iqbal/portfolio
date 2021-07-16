@@ -3,21 +3,120 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    position: relative;
 
-    h1 {
-        font-size: 50px;
+    .arrow-left {
+        height: 50px;
+        position: absolute;
+        cursor: pointer;
+        left: 5vw;
+        transform: rotateY(180deg);
     }
 
-    ul {
-        margin: 10px;
-        padding: 0;
-        list-style: none;
-        display: flex;
+    .arrow-right {
+        height: 50px;
+        position: absolute;
+        cursor: pointer;
+        right: 5vw;
+      
+    }
 
-        li {
-            font-size: 14px;
-            margin-right: 50px;
-            padding: 7px;
+    .slider {
+        height: 350px;
+        display: flex;
+        position: absolute;
+        left: 0;
+        transition: all 1s ease-out;
+
+        .container {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        
+            .item {
+                width: 800px;
+                height: 100%;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .left {
+                    flex: 4;
+                    height: 80%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .leftContainer {
+                        width: 90%;
+                        height: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .imgContainer {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-color: lightblue;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            img {
+                                width: 25px;
+                            }
+                        }
+
+                        h2 {
+                            font-size: 20px;
+                        }
+
+                        p {
+                            font-size: 13px;
+                        }
+
+                        span {
+                            font-size: 12px;
+                            font-weight: bold;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                .right {
+                    flex: 8;
+                    height: 90%;
+                    object-fit: cover;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    
+                    
+
+                    .displayContainer {
+                        overflow: hidden;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                        margin-right: 15px;
+                      
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            
+                        }
+                    }
+                }
+            }
         }
     }
 }
