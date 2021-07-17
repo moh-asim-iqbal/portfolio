@@ -27,9 +27,9 @@ export default function Portfolio() {
           icon: "./assets/github-logo.png",
           title: "Path Planning for Robotic Manipulator",
           desc:
-            "Algorithm that takes start and end coordinates and charts optimal path, while avoiding specifed obstacles.",
+            "Algorithm that takes start and end coordinates and charts optimal joint configurations, while avoiding specifed obstacles.",
           img:
-            "./assets/manipulator-path.png",
+            "./assets/scara.jpg",
         },
       ];
    

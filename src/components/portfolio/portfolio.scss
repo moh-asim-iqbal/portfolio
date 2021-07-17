@@ -1,5 +1,7 @@
+  @import "../../global.scss";
+
 .portfolio {
-    background-color: lightcoral;
+    background-color: crimson;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,6 +14,10 @@
         cursor: pointer;
         left: 5vw;
         transform: rotateY(180deg);
+
+        @include mobile {
+            display: none;
+        }
     }
 
     .arrow-right {
@@ -19,15 +25,25 @@
         position: absolute;
         cursor: pointer;
         right: 5vw;
+
+        @include mobile {
+            display: none;
+        }
       
     }
 
     .slider {
-        height: 350px;
+        height: 60vh;
         display: flex;
         position: absolute;
         left: 0;
         transition: all 1s ease-out;
+
+        @include mobile {
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+        }
 
         .container {
             width: 100vw;
@@ -37,13 +53,19 @@
 
         
             .item {
-                width: 800px;
+                width: 75vw;
                 height: 100%;
                 background-color: white;
                 border-radius: 20px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                @include mobile {
+                    width: 80%;
+                    height: 150px;
+                    margin: 10px 0;
+                }
 
                 .left {
                     flex: 4;
@@ -53,8 +75,9 @@
                     justify-content: center;
 
                     .leftContainer {
+                        
                         width: 90%;
-                        height: 70%;
+                        height: 100%;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
@@ -68,23 +91,45 @@
                             align-items: center;
                             justify-content: center;
 
+                            @include mobile {
+                               
+                                width: 20px;
+                                height: 20px;
+                            }
+
                             img {
                                 width: 25px;
+
+                                @include mobile {
+                                    width: 15px;
+                                }
                             }
                         }
 
                         h2 {
                             font-size: 20px;
+
+                            @include mobile{
+                                font-size: 13px;
+                            }
                         }
 
                         p {
                             font-size: 13px;
+
+                            @include mobile{
+                                display: none;
+                            }
                         }
 
                         span {
                             font-size: 12px;
                             font-weight: bold;
                             text-decoration: underline;
+
+                            @include mobile{
+                                font-size: 10px;
+                            }
                         }
                     }
                 }
@@ -106,13 +151,18 @@
                         height: 100%;
                         border-radius: 10px;
                         margin-right: 15px;
+
+                        @include mobile{
+                            margin-right: 10px;
+                        }
                       
 
                         img {
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
-                            
+
+    
                         }
                     }
                 }
