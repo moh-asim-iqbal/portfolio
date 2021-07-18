@@ -33,7 +33,7 @@
     }
 
     .slider {
-        height: 60vh;
+        height: 50vh;
         display: flex;
         position: absolute;
         left: 0;
@@ -53,13 +53,15 @@
 
         
             .item {
-                width: 75vw;
-                height: 100%;
+                width: 60vw;
+                height: 95%;
                 background-color: white;
                 border-radius: 20px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+                
 
                 @include mobile {
                     width: 80%;
@@ -75,12 +77,12 @@
                     justify-content: center;
 
                     .leftContainer {
-                        
                         width: 90%;
                         height: 100%;
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-between;
+                        justify-content: space-evenly;
+                        margin-left: 1vw;
 
                         .imgContainer {
                             width: 40px;
@@ -104,10 +106,21 @@
                                     width: 15px;
                                 }
                             }
+
+                            .icon-container {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+
+                                p {
+                                    float: left;
+                                }
+                            }
                         }
 
                         h2 {
                             font-size: 20px;
+                            margin-bottom: 0.5em;
 
                             @include mobile{
                                 font-size: 13px;
@@ -136,14 +149,11 @@
 
                 .right {
                     flex: 8;
-                    height: 90%;
+                    height: 92%;
                     object-fit: cover;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    
-                    
-                    
 
                     .displayContainer {
                         overflow: hidden;
@@ -156,7 +166,6 @@
                             margin-right: 10px;
                         }
                       
-
                         img {
                             width: 100%;
                             height: 100%;
