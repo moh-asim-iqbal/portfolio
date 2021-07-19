@@ -1,7 +1,8 @@
   @import "../../global.scss";
 
 .portfolio {
-    background-color: crimson;
+    // background-color: #ad1f45;
+    background-color: #F27348 ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,11 +85,15 @@
                         justify-content: space-evenly;
                         margin-left: 1vw;
 
+                       .tech-used {
+                            margin-top: 0.5em;
+                       }
+
                         .imgContainer {
                             width: 40px;
                             height: 40px;
                             border-radius: 50%;
-                            background-color: lightblue;
+                            background-color: black;
                             display: flex;
                             align-items: center;
                             justify-content: center;
@@ -107,15 +112,6 @@
                                 }
                             }
 
-                            .icon-container {
-                                display: flex;
-                                flex-direction: row;
-                                align-items: center;
-
-                                p {
-                                    float: left;
-                                }
-                            }
                         }
 
                         h2 {
