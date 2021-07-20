@@ -1,11 +1,10 @@
-import { useState } from "react";
+import { useState, forwardRef } from "react";
 import {data} from './projects-data'
 import "./styles.scss"
 
-export default function Portfolio() {
+const Portfolio =  forwardRef( (props,ref) => {
     const [currentSlide, setCurrentSlide] = useState(0)
     
-   
     const handleClick = dir => {
         dir === "left" ? 
             setCurrentSlide(currentSlide > 0 ? currentSlide - 1: data.length - 1)
@@ -13,7 +12,7 @@ export default function Portfolio() {
     }
     
     return (
-        <div className="portfolio" id="portfolio">
+        <div className="portfolio" id="portfolio" ref={ref}>
            <div 
             className="slider"
             style={{transform: `translateX(-${currentSlide *100}vw)`}}
@@ -23,7 +22,7 @@ export default function Portfolio() {
                     <div className="item">
                         <div className="left">
                             <div className="leftContainer">
-                                <a className="imgContainer" href={d.gitLink} target="_blank" rel="noopener noreferrer">
+                                <a className="imgContainer" href={d.gitLink} target="_blank" rel="noopener noreferrer" key={d.id}>
                                     <img src={d.icon} alt="icon" />
                                 </a>
                                 <div className="info">
@@ -38,7 +37,7 @@ export default function Portfolio() {
                         </div>
                         <div className="right">
                             <div className="displayContainer">
-                              <img src={d.img} alt="logo" />
+                              <img src={d.img} alt="logo" key={d.id}/>
                             </div>
                         </div>
                         
@@ -51,4 +50,6 @@ export default function Portfolio() {
             <i class="fa fa-cloud"></i> 
         </div>
     )
-}
+})
+
+export default Portfolio

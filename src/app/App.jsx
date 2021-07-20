@@ -1,6 +1,5 @@
-import { useState, useEffect } from 'react'
-import { withRouter } from "react-router-dom"
-
+import { useState, useRef} from 'react'
+import useOnScreen from './onscreen.js'
 import Topbar from '../components/Topbar'
 import Intro from '../components/intro/Intro'
 import Portfolio from '../components/portfolio/Portfolio'
@@ -8,27 +7,20 @@ import Menu from '../components/menu/Menu'
 import './styles.scss'
 function App () {
     const [menuOpen, setMenuOpen] = useState(false)
-    const [title, setTitle] = useState('Welcome')
+    const ref = useRef(null)
+    const onScreen = useOnScreen(ref,"-300px")
 
-    // eslint-disable-next-line
-    useEffect( () => {
-        
-        window.location.hash === "#portfolio" ?
-        setTitle('Portfolio') :
-        setTitle('')
-        
-    })
     return (
         <div className="app">
-            <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} title={title}/>
+            <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} title={onScreen ? 'Portfolio' : 'Home'}/>
             <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
             <div className="sections">
                 <Intro />
-                <Portfolio />
+                <Portfolio ref={ref}/>
             </div>
 
         </div>
     )
 }
 
-export default withRouter(App)
+export default App

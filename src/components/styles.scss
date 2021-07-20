@@ -16,6 +16,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        transition: all 1s ease;
+        -moz-transition: all 1s ease;
 
 
         .right{
