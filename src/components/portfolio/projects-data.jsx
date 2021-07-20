@@ -1,5 +1,15 @@
-import { FaReact, FaNode, FaServer, FaDatabase} from 'react-icons/fa';
+import { 
+  FaReact, 
+  FaNode, 
+  FaServer,
+  FaDesktop,
+  FaPython,
+  FaDatabase} from 'react-icons/fa';
 import './projects-data.scss'
+
+import { SiArduino } from "react-icons/si";
+
+import { GiCircuitry } from "react-icons/gi";
 
 export const data = [
     {
@@ -9,7 +19,7 @@ export const data = [
       desc:
         "Web based grocery management system focusing on food waste prevention.",
       img:
-        "./assets/best-by-add.png",
+        "./assets/food-tech.jpg ",
       techIcon: [
         <div className="tech-item">
           <p>ReactJS</p>
@@ -37,8 +47,24 @@ export const data = [
         "Fully functional and discretly packaged robotic air hockey table that allows for autonomous, assisted (with input blending), or regular play.",
       img:
         "./assets/care-hockey.png",
-      techName: ["React", "Node", "Express"],
-      techIcon: [FaReact, FaNode, FaServer],
+        techIcon: [
+          <div className="tech-item">
+            <p>SolidWorks</p>
+            <FaDesktop size={28}/>
+          </div>,
+          <div className="tech-item">
+            <p>MATLAB</p>
+            <img src='./assets/matlab-icon.png' alt="icon"/>
+          </div>,
+          <div className="tech-item">
+            <p>Arduino</p>
+            <SiArduino size={28}/>
+          </div>,
+          <div className="tech-item">
+            <p>AutoDesk EAGLE</p>
+            <GiCircuitry size={28}/>
+          </div>,
+        ]
     },
     {
       id: "3",
@@ -48,8 +74,24 @@ export const data = [
         "Compared various ML algorithms for optimal performance. Obtained fraud detection precision of 78.5% using Random Forest.",
       img:
         "./assets/ai.png",
-      techName: ["React", "Node", "Express"],
-      techIcon: [FaReact, FaNode, FaServer],
+      techIcon: [
+        <div className="tech-item">
+          <p>Python</p>
+          <FaPython size={28}/>
+        </div>,
+        <div className="tech-item">
+          <p>Scikit-learn</p>
+          <img src="./assets/scikit.png" alt="logo"/>
+        </div>,
+        <div className="tech-item">
+          <p>Pandas</p>
+          <img src="./assets/pandas_mark.svg" alt="logo" style={{width:"30px",height:"30px"}}/>
+        </div>,
+        <div className="tech-item">
+          <p>Jupyter Notebook</p>
+          <img src="./assets/jupyter.png" alt="logo"/>
+        </div>,
+      ]
     },
     {
       id: "4",
@@ -58,7 +100,7 @@ export const data = [
       desc:
         "Simple portfolio website.",
       img:
-        "./assets/logo-og.png",
+        "./assets/portfolio.jpeg",
       techIcon: [
         <div className="tech-item">
           <p>ReactJS</p>

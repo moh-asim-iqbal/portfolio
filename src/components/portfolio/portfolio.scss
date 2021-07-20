@@ -85,8 +85,14 @@
                         justify-content: space-evenly;
                         margin-left: 1vw;
 
-                       .tech-used {
-                            margin-top: 0.5em;
+                       .tech-container {
+                            .tech-title {
+                                font-size: 0.9em;
+                            }
+
+                            .tech-used {
+                                margin-top: 0.5em; 
+                            }
                        }
 
                         .imgContainer {

@@ -31,7 +31,7 @@ export default function Portfolio() {
                                   <p>{d.desc}</p>
                                 </div>
                                 <div className="tech-container">
-                                  <span>Technologies Used</span>
+                                  <span className="tech-title">Technologies Used</span>
                                   <div className="tech-used">{d.techIcon}</div>
                                 </div>
                             </div>
