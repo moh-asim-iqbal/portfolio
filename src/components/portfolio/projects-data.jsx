@@ -20,6 +20,7 @@ export const data = [
         "Web based grocery management system focusing on food waste prevention.",
       img:
         "./assets/food-tech.jpg ",
+      gitLink: "https://github.com/moh-asim-iqbal/best-by-app",
       techIcon: [
         <div className="tech-item">
           <p>ReactJS</p>
@@ -47,6 +48,7 @@ export const data = [
         "Fully functional and discretly packaged robotic air hockey table that allows for autonomous, assisted (with input blending), or regular play.",
       img:
         "./assets/care-hockey.png",
+      gitLink: "https://github.com/",
       techIcon: [
         <div className="tech-item">
           <p>SolidWorks</p>
@@ -74,6 +76,7 @@ export const data = [
         "Compared various ML algorithms for optimal performance. Obtained fraud detection precision of 78.5% using Random Forest.",
       img:
         "./assets/ai.png",
+      gitLink: "https://github.com/",
       techIcon: [
         <div className="tech-item">
           <p>Python</p>
@@ -101,6 +104,7 @@ export const data = [
         "Simple portfolio website.",
       img:
         "./assets/portfolio2.jpg",
+      gitLink: "https://github.com/moh-asim-iqbal/portfolio-app",
       techIcon: [
         <div className="tech-item">
           <p>ReactJS</p>
@@ -116,7 +120,7 @@ export const data = [
         "Algorithm that takes start and end coordinates and charts optimal joint configurations, while avoiding specifed obstacles.",
       img:
         "./assets/scara.jpg",
-      techName: ["React", "Node", "Express"],
+      gitLink: "https://github.com/",
       techIcon: [
         <div className="tech-item">
           <p>MATLAB</p>

@@ -23,9 +23,9 @@ export default function Portfolio() {
                     <div className="item">
                         <div className="left">
                             <div className="leftContainer">
-                                <div className="imgContainer">
+                                <a className="imgContainer" href={d.gitLink} target="_blank" rel="noopener noreferrer">
                                     <img src={d.icon} alt="icon" />
-                                </div>
+                                </a>
                                 <div className="info">
                                   <h2>{d.title}</h2>
                                   <p>{d.desc}</p>
