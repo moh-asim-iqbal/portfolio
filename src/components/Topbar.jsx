@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import "./topbar.scss"
+import "./styles.scss"
 
 function Topbar({menuOpen, setMenuOpen, title}) {
     const [currTitle, setCurrTitle] = useState('Welcome')

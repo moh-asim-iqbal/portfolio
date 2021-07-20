@@ -1,6 +1,6 @@
 import { useState } from "react";
 import {data} from './projects-data'
-import "./portfolio.scss"
+import "./styles.scss"
 
 export default function Portfolio() {
     const [currentSlide, setCurrentSlide] = useState(0)

@@ -5,7 +5,7 @@ import Topbar from '../components/Topbar'
 import Intro from '../components/intro/Intro'
 import Portfolio from '../components/portfolio/Portfolio'
 import Menu from '../components/menu/Menu'
-import './app.scss'
+import './styles.scss'
 function App () {
     const [menuOpen, setMenuOpen] = useState(false)
     const [title, setTitle] = useState('Welcome')

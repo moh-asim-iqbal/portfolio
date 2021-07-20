@@ -5,7 +5,7 @@ import {
   FaDesktop,
   FaPython,
   FaDatabase} from 'react-icons/fa';
-import './projects-data.scss'
+import './styles.scss'
 
 import { SiArduino } from "react-icons/si";
 
