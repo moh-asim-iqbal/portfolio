@@ -15,7 +15,7 @@ function App () {
         
         window.location.hash === "#portfolio" ?
         setTitle('Portfolio') :
-        setTitle('Welcome')
+        setTitle('')
         
     })
     return (
