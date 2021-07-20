@@ -1,6 +1,11 @@
+import { useState, useEffect } from "react"
 import "./topbar.scss"
 
-export default function Topbar ({menuOpen, setMenuOpen}) {
+function Topbar({menuOpen, setMenuOpen, title}) {
+    const [currTitle, setCurrTitle] = useState('Welcome')
+    useEffect(()=> {
+        setCurrTitle(title)
+    }, [title])
     return (
         <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
@@ -8,7 +13,7 @@ export default function Topbar ({menuOpen, setMenuOpen}) {
                    
                 
                 </div>
-                <h1>Asim</h1>
+                <h1>{currTitle}</h1>
                 <div className="right">
                     <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
                         <span className="line1"></span>
@@ -21,3 +26,5 @@ export default function Topbar ({menuOpen, setMenuOpen}) {
         </div>
     )
 }
+
+export default Topbar
