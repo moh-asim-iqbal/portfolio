@@ -47,24 +47,24 @@ export const data = [
         "Fully functional and discretly packaged robotic air hockey table that allows for autonomous, assisted (with input blending), or regular play.",
       img:
         "./assets/care-hockey.png",
-        techIcon: [
-          <div className="tech-item">
-            <p>SolidWorks</p>
-            <FaDesktop size={28}/>
-          </div>,
-          <div className="tech-item">
-            <p>MATLAB</p>
-            <img src='./assets/matlab-icon.png' alt="icon"/>
-          </div>,
-          <div className="tech-item">
-            <p>Arduino</p>
-            <SiArduino size={28}/>
-          </div>,
-          <div className="tech-item">
-            <p>AutoDesk EAGLE</p>
-            <GiCircuitry size={28}/>
-          </div>,
-        ]
+      techIcon: [
+        <div className="tech-item">
+          <p>SolidWorks</p>
+          <FaDesktop size={28}/>
+        </div>,
+        <div className="tech-item">
+          <p>MATLAB</p>
+          <img src='./assets/matlab-icon.png' alt="icon"/>
+        </div>,
+        <div className="tech-item">
+          <p>Arduino</p>
+          <SiArduino size={28}/>
+        </div>,
+        <div className="tech-item">
+          <p>AutoDesk EAGLE</p>
+          <GiCircuitry size={28}/>
+        </div>,
+      ]
     },
     {
       id: "3",
@@ -100,7 +100,7 @@ export const data = [
       desc:
         "Simple portfolio website.",
       img:
-        "./assets/portfolio.jpeg",
+        "./assets/portfolio2.jpg",
       techIcon: [
         <div className="tech-item">
           <p>ReactJS</p>
@@ -117,6 +117,15 @@ export const data = [
       img:
         "./assets/scara.jpg",
       techName: ["React", "Node", "Express"],
-      techIcon: [FaReact, FaNode, FaServer],
+      techIcon: [
+        <div className="tech-item">
+          <p>MATLAB</p>
+          <img src='./assets/matlab-icon.png' alt="icon"/>
+        </div>,
+        <div className="tech-item">
+          <p>SolidWorks</p>
+          <FaDesktop size={28}/>
+        </div>,
+      ]
     },
   ];
