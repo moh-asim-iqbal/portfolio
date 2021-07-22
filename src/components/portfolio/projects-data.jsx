@@ -5,11 +5,11 @@ import {
   FaDesktop,
   FaPython,
   FaDatabase} from 'react-icons/fa';
+
 import './styles.scss'
-
 import { SiArduino } from "react-icons/si";
-
 import { GiCircuitry } from "react-icons/gi";
+import {IconContext} from "react-icons";
 
 export const data = [
     {
@@ -24,19 +24,19 @@ export const data = [
       techIcon: [
         <div className="tech-item">
           <p>ReactJS</p>
-          <FaReact size={28}/>
+          <FaReact className="tech-pic"/>
         </div>,
         <div className="tech-item">
           <p>Node.js</p>
-          <FaNode size={28}/>
+          <FaNode className="tech-pic"/>
         </div>,
         <div className="tech-item">
           <p>Express</p>
-          <FaServer size={28}/>
+          <FaServer className="tech-pic" />
         </div>,
         <div className="tech-item">
           <p>MongoDB</p>
-          <FaDatabase size={28}/>
+          <FaDatabase className="tech-pic"/>
         </div>,
       ]
     },
@@ -52,7 +52,7 @@ export const data = [
       techIcon: [
         <div className="tech-item">
           <p>SolidWorks</p>
-          <FaDesktop size={28}/>
+          <FaDesktop className="tech-pic" />
         </div>,
         <div className="tech-item">
           <p>MATLAB</p>
@@ -60,11 +60,11 @@ export const data = [
         </div>,
         <div className="tech-item">
           <p>Arduino</p>
-          <SiArduino size={28}/>
+          <SiArduino className="tech-pic" />
         </div>,
         <div className="tech-item">
-          <p>AutoDesk EAGLE</p>
-          <GiCircuitry size={28}/>
+          <p>EAGLE</p>
+          <GiCircuitry className="tech-pic" />
         </div>,
       ]
     },
@@ -80,7 +80,7 @@ export const data = [
       techIcon: [
         <div className="tech-item">
           <p>Python</p>
-          <FaPython size={28}/>
+          <FaPython />
         </div>,
         <div className="tech-item">
           <p>Scikit-learn</p>
@@ -88,10 +88,10 @@ export const data = [
         </div>,
         <div className="tech-item">
           <p>Pandas</p>
-          <img src="./assets/pandas_mark.svg" alt="logo" style={{width:"30px",height:"30px"}}/>
+          <img src="./assets/pandas_mark.svg" alt="logo"/>
         </div>,
         <div className="tech-item">
-          <p>Jupyter Notebook</p>
+          <p>Jupyter</p>
           <img src="./assets/jupyter.png" alt="logo"/>
         </div>,
       ]
@@ -108,7 +108,7 @@ export const data = [
       techIcon: [
         <div className="tech-item">
           <p>ReactJS</p>
-          <FaReact size={28}/>
+          <FaReact />
         </div>,
       ]
     },
@@ -128,7 +128,7 @@ export const data = [
         </div>,
         <div className="tech-item">
           <p>SolidWorks</p>
-          <FaDesktop size={28}/>
+          <FaDesktop />
         </div>,
       ]
     },

@@ -1,3 +1,5 @@
+@import '../styles/breakpoints';
+
 .app {
     height: 100vh;
 
@@ -17,6 +19,18 @@
             width: 100vw;
             height: calc(100vh - 70px);
             scroll-snap-align: start;
+
+            @include breakpoint-medium-down {
+                height: calc(100vh - 50px);
+                top: 50px
+            }
         }
+
+        @include breakpoint-medium-down {
+            height: calc(100vh - 50px);
+            top: 50px
+        }
+
+        
     }
 }

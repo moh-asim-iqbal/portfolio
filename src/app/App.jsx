@@ -1,6 +1,6 @@
 import { useState, useRef} from 'react'
 import useOnScreen from './onscreen.js'
-import Topbar from '../components/Topbar'
+import Topbar from '../components/Topbar/Topbar'
 import Intro from '../components/intro/Intro'
 import Portfolio from '../components/portfolio/Portfolio'
 import Menu from '../components/menu/Menu'

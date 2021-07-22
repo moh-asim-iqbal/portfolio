@@ -1,4 +1,5 @@
-@import '../global.scss';
+@import '../../global.scss';
+@import '../../styles/breakpoints';
 
 .topbar {
     width: 100%;
@@ -8,19 +9,29 @@
     position: fixed;
     top: 0;
     z-index: 3;
-    transition: all 1s ease;
-    -moz-transition: all 1s ease;
+    transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+
+    @include breakpoint-medium-down {
+        height: 50px;
+    }
 
     .wrapper{
         padding: 10px 30px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        transition: all 1s ease;
-        -moz-transition: all 1s ease;
 
+        @include breakpoint-medium-down {
+            padding: 0px 15px;
+        }
 
+        .left {
+            width: 4%;
+        }
+     
         .right{
+            
             .hamburger{
                 width: 32px;
                 height: 25px;
