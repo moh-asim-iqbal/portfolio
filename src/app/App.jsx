@@ -8,7 +8,7 @@ import './styles.scss'
 function App () {
     const [menuOpen, setMenuOpen] = useState(false)
     const ref = useRef(null)
-    const onScreen = useOnScreen(ref,"-300px")
+    const onScreen = useOnScreen(ref,"-100px")
 
     return (
         <div className="app">

@@ -81,7 +81,7 @@
 
                 .left {
                     flex: 4;
-                    height: 80%;
+                    height: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -94,6 +94,58 @@
                         justify-content: space-evenly;
                         margin-left: 1vw;
 
+                        .gitlink {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+
+                            .imgContainerLabel {
+                                font-size: 15px;
+
+                                @include breakpoint-small-down {
+                                    font-size: 10px;
+                                }
+                            }
+
+                            .imgContainer {
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                background-color: black;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-right: 5px;
+    
+                                @include breakpoint-small-down {
+                                    width: 17.5px;
+                                    height: 17.5px;
+                                }
+                                @include breakpoint-medium-only {
+                                   
+                                    width: 20px;
+                                    height: 20px;
+                                }
+    
+                                img {
+                                    width: 25px;
+    
+                                    @include breakpoint-small-down {
+                                        width: 12px;
+                                    }
+                                    @include breakpoint-medium-only {
+                                        width: 15px;
+                                    }
+                                }
+    
+                            }
+
+                            label {
+                                font-size: 15px;
+                                font-weight: bold;
+                            }
+                        }
+
                         .info {
 
                             p {
@@ -103,47 +155,9 @@
                             }
                         }
 
-                       .tech-container {
-                            .tech-title {
-                                font-size: 0.9em;
-                            }
+                       
 
-                            .tech-used {
-                                margin-top: 0.5em; 
-                            }
-                       }
-
-                        .imgContainer {
-                            width: 40px;
-                            height: 40px;
-                            border-radius: 50%;
-                            background-color: black;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-
-                            @include breakpoint-small-down {
-                                width: 12px;
-                                height: 12px;
-                            }
-                            @include breakpoint-medium-only {
-                               
-                                width: 20px;
-                                height: 20px;
-                            }
-
-                            img {
-                                width: 25px;
-
-                                @include breakpoint-small-down {
-                                    width: 10px;
-                                }
-                                @include breakpoint-medium-only {
-                                    width: 15px;
-                                }
-                            }
-
-                        }
+                        
 
                         h2 {
                             font-size: 20px;
@@ -163,7 +177,7 @@
                             font-size: 13px;
                         }
 
-                        span {
+                        .tech-title {
                             font-size: 12px;
                             font-weight: bold;
                             text-decoration: underline;

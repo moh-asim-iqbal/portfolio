@@ -21,13 +21,13 @@
             scroll-snap-align: start;
 
             @include breakpoint-medium-down {
-                height: calc(100vh - 50px);
+                height: calc(100vh - 35px);
                 top: 50px
             }
         }
 
         @include breakpoint-medium-down {
-            height: calc(100vh - 50px);
+            height: calc(100vh - 35px);
             top: 50px
         }
 

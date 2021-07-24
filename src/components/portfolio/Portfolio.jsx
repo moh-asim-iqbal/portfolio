@@ -22,9 +22,13 @@ const Portfolio =  forwardRef( (props,ref) => {
                     <div className="item">
                         <div className="left">
                             <div className="leftContainer">
-                                <a className="imgContainer" href={d.gitLink} target="_blank" rel="noopener noreferrer" key={d.id}>
-                                    <img src={d.icon} alt="icon" />
-                                </a>
+                                <div className="gitlink">
+                                    
+                                    <a className="imgContainer" id="imgContainer" href={d.gitLink} target="_blank" rel="noopener noreferrer" key={d.id}>
+                                        <img src={d.icon} alt="icon" />
+                                    </a>
+                                    <span className="imgContainerLabel" for="imgContainer">- Github </span>
+                                </div>
                                 <div className="info">
                                   <h2>{d.title}</h2>
                                   <p>{d.desc}</p>
