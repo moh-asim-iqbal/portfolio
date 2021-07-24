@@ -76,7 +76,7 @@ export const data = [
         "Compared various ML algorithms for optimal performance. Obtained fraud detection precision of 78.5% using Random Forest.",
       img:
         "./assets/ai.png",
-      gitLink: "https://github.com/",
+      gitLink: "https://github.com/moh-asim-iqbal/Credit-Card-Fraud-Detection",
       techIcon: [
         <div className="tech-item">
           <p>Python</p>
@@ -120,7 +120,7 @@ export const data = [
         "Algorithm that takes start and end coordinates and charts optimal joint configurations, while avoiding specifed obstacles.",
       img:
         "./assets/scara.jpg",
-      gitLink: "https://github.com/",
+      gitLink: "https://github.com/moh-asim-iqbal/robotic-path-planning",
       techIcon: [
         <div className="tech-item">
           <p>MATLAB</p>

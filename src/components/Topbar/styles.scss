@@ -29,6 +29,12 @@
         .left {
             width: 4%;
         }
+
+        h1 {
+            @include breakpoint-medium-down {
+                font-size: 12px;
+            }
+        }
      
         .right{
             
@@ -39,6 +45,11 @@
                 flex-direction: column;
                 justify-content: space-between;
                 cursor: pointer;
+
+                @include breakpoint-medium-down {
+                    width: 25px;
+                    height: 18px;
+                }
 
                 span{
                     width: 100%;
