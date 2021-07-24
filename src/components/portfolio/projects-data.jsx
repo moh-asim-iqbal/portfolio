@@ -119,7 +119,7 @@ export const data = [
       desc:
         "Algorithm that takes start and end coordinates and charts optimal joint configurations, while avoiding specifed obstacles.",
       img:
-        "./assets/scara.jpg",
+        "./assets/scara-path.jpg",
       gitLink: "https://github.com/moh-asim-iqbal/robotic-path-planning",
       techIcon: [
         <div className="tech-item">
