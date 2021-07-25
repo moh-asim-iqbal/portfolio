@@ -48,7 +48,7 @@ export const data = [
         "Fully functional and discretly packaged robotic air hockey table that allows for autonomous, assisted (with input blending), or regular play.",
       img:
         "./assets/care-hockey.png",
-      gitLink: "https://github.com/",
+      gitLink: "https://github.com/moh-asim-iqbal/Care-Hockey",
       techIcon: [
         <div className="tech-item">
           <p>SolidWorks</p>
